@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<SimscapeMultibodyImportXML version="2.0" xmlns="urn:mathworks:SimscapeMultibody:import" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<Created by="" on="12/11/23||23:52:37" using="Simscape Multibody Link Version 7.4" from="SolidWorks 28.2.0"/>
+<ModelUnits mass="kilogram" length="millimeter"/>
+<DataUnits mass="kilogram" length="meter"/>
+<RootAssembly name="washer" uid="washer" version="134">
+<AssemblyFile name="washer.SLDASM" type="SolidWorks Assembly"/>
+<InstanceTree>
+<Instance name="washer2-2" uid="washer2-2" entityUid="washer2*:*Default">
+<Transform>
+<Rotation>1.2819141521413026e-16 -1.7022094620949439e-16 -0.99999999999999989 -0.095304043220748327 -0.99544821027805253 1.5722897607998145e-16 -0.99544821027805253 0.095304043220748327 -1.4383065926254304e-16</Rotation>
+<Translation>0.18152978562516123 0.97303790245016686 0.28588904317599145</Translation>
+</Transform>
+</Instance>
+<Instance name="washer1-2" uid="washer1-2" entityUid="washer1*:*Default">
+<Transform>
+<Rotation>-0.83108855155914207 1.9088007180905046e-16 -0.55614010776721279 0.053002400867438189 0.99544821027805253 -0.079206099238061378 0.55360867494071531 -0.095304043220748202 -0.82730561123212687</Rotation>
+<Translation>0.18152978562516131 1.05267375927241 0.27826471971833106</Translation>
+</Transform>
+</Instance>
+<Instance name="washer3-1" uid="washer3-1" grounded="true" entityUid="washer3*:*Default">
+<Transform>
+<Rotation>1 0 0 0 1 0 0 0 1</Rotation>
+<Translation>0.18152978562516123 0.11622415525551977 0.35260187343051597</Translation>
+</Transform>
+</Instance>
+</InstanceTree>
+<Constraints>
+<Coincident name="Coincident3">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>washer3-1</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>1 0 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>washer2-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric2">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>washer3-1</Uid>
+</InstancePath>
+<Position>0 0.15999999999999998 0</Position>
+<Axis>1 2.05596856412066e-16 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>washer2-2</Uid>
+</InstancePath>
+<Position>0 0.70000000000000018 -0.12499999999999997</Position>
+<Axis>0 0 0.99999999999999989</Axis>
+</ConstraintGeometry>
+</Concentric>
+<Coincident name="Coincident5">
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>washer2-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="plane">
+<InstancePath>
+<Uid>washer1-2</Uid>
+</InstancePath>
+<Position>0 -0.079999999999999849 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Coincident>
+<Concentric name="Concentric3">
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>washer2-2</Uid>
+</InstancePath>
+<Position>0 -0.089999999999999858 0</Position>
+<Axis>0 1.0000000000000002 0</Axis>
+</ConstraintGeometry>
+<ConstraintGeometry geomType="cylinder">
+<InstancePath>
+<Uid>washer1-2</Uid>
+</InstancePath>
+<Position>0 0 0</Position>
+<Axis>0 -1 0</Axis>
+</ConstraintGeometry>
+</Concentric>
+</Constraints>
+</RootAssembly>
+<Assemblies>
+</Assemblies>
+<Parts>
+<Part name="washer1" uid="washer1*:*Default" version="190">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="washer1.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>6.1181793179758444</Mass>
+<CenterOfMass>-0.0047560043868473054 0.03983215417449177 0.0067689449647770688</CenterOfMass>
+<Inertia>0.1702779115967463 2.2040650409865123 2.0644597314164765 -0.00073960050525224096 -0.46165538600319572 -0.0005350156643427089</Inertia>
+</MassProperties>
+<GeometryFile name="washer1_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="washer2" uid="washer2*:*Default" version="112">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="washer2.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>39.202453238274259</Mass>
+<CenterOfMass>-1.3399124352835064e-09 0.39612544873734723 0.00038730008741107673</CenterOfMass>
+<Inertia>2.2590657991605787 0.30554861686446155 2.2602925916951393 -0.0046139942089929165 -5.4178268245805697e-09 1.2651041828620757e-08</Inertia>
+</MassProperties>
+<GeometryFile name="washer2_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+<Part name="washer3" uid="washer3*:*Default" version="125">
+<ModelUnits mass="kilogram" length="millimeter"/>
+<PartFile name="washer3.SLDPRT" type="SolidWorks Part"/>
+<MassProperties>
+<Mass>8.217907788849665</Mass>
+<CenterOfMass>0.0068733064580514596 0.031912636134865682 -1.6434656165308231e-07</CenterOfMass>
+<Inertia>0.10334201681251186 0.19510985790185578 0.10971553900022819 1.1040933718285764e-07 1.9348171543282458e-07 -0.0056814167508977857</Inertia>
+</MassProperties>
+<GeometryFile name="washer3_Default_sldprt.STEP" type="STEP"/>
+<VisualProperties>
+<Ambient r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Diffuse r="0.792156862745098" g="0.81960784313725488" b="0.93333333333333335" a="1"/>
+<Specular r="0.396078431372549" g="0.40980392156862744" b="0.46666666666666667" a="1"/>
+<Emissive r="0" g="0" b="0" a="1"/>
+<Shininess>0.40000000596046448</Shininess>
+</VisualProperties>
+</Part>
+</Parts>
+</SimscapeMultibodyImportXML>
