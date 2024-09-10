@@ -1,0 +1,1 @@
+[DOF4_Assem21,ArmInfo]=importrobot('Assem21');
