@@ -1,0 +1,1 @@
+[DOF6_robot6,ArmInfo]=importrobot('washer');
