@@ -1,0 +1,1 @@
+[DOF5_robot5,ArmInfo]=importrobot('robot6');

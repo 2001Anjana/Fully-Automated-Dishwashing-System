@@ -1,0 +1,56 @@
+classdef DishwasherSimulation
+    properties
+        waterLevel % Current water level in the dishwasher
+        detergentLevel % Current detergent level in the dishwasher
+        dishes % Number of dishes in the dishwasher
+        isRunning % Flag indicating whether the dishwasher is running
+    end
+    
+    methods
+        % Constructor
+        function obj = DishwasherSimulation()
+            obj.waterLevel = 0;
+            obj.detergentLevel = 100; % Assume full detergent at the beginning
+            obj.dishes = 0;
+            obj.isRunning = false;
+        end
+        
+        % Function to add dishes to the dishwasher
+        function obj = addDishes(obj, numDishes)
+            obj.dishes = obj.dishes + numDishes;
+            fprintf('Added %d dishes to the dishwasher.\n', numDishes);
+        end
+        
+        % Function to add water to the dishwasher
+        function obj = addWater(obj, amount)
+            obj.waterLevel = obj.waterLevel + amount;
+            fprintf('Added %d liters of water to the dishwasher. Current water level: %d\n', amount, obj.waterLevel);
+        end
+        
+        % Function to add detergent to the dishwasher
+        function obj = addDetergent(obj, amount)
+            obj.detergentLevel = obj.detergentLevel + amount;
+            fprintf('Added %d grams of detergent to the dishwasher. Current detergent level: %d\n', amount, obj.detergentLevel);
+        end
+        
+        % Function to start the dishwasher
+        function obj = startDishwasher(obj)
+            if obj.dishes > 0 && obj.waterLevel >= 50 && obj.detergentLevel >= 20
+                obj.isRunning = true;
+                fprintf('Dishwasher started. Washing %d dishes...\n', obj.dishes);
+            else
+                fprintf('Insufficient dishes, water, or detergent to start the dishwasher.\n');
+            end
+        end
+        
+        % Function to stop the dishwasher
+        function obj = stopDishwasher(obj)
+            if obj.isRunning
+                obj.isRunning = false;
+                fprintf('Dishwasher stopped.\n');
+            else
+                fprintf('Dishwasher is not running.\n');
+            end
+        end
+    end
+end
