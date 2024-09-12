@@ -1,0 +1,13 @@
+% Create a dishwasher simulation object
+dishwasher = DishwasherSimulation();
+
+% Add dishes, water, and detergent
+dishwasher = dishwasher.addDishes(10);
+dishwasher = dishwasher.addWater(50);
+dishwasher = dishwasher.addDetergent(30);
+
+% Start the dishwasher
+dishwasher = dishwasher.startDishwasher();
+
+% Stop the dishwasher
+dishwasher = dishwasher.stopDishwasher();
